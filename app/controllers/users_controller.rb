@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
     def index
-        user = User.new
+        user = User.new(params_user_search)
         @users = user.search
     end
 
